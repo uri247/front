@@ -6,11 +6,21 @@
 </head>
 <body>
 
-<h1>Front</h1>
+<h1>header text</h1>
 
 <div>Various experiments and tests with various front end libraries and patterns</div>
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+      $('h1').text(header_text);
+  });
+</script>
+
+<script type="text/javascript">
+  const header_text = 'Front';
+</script>
 
 </body>
 </html>
