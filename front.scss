@@ -1,0 +1,18 @@
+@import "@material/button/mdc-button";
+
+.teal-button {
+  @include mdc-ripple-surface;
+  @include mdc-ripple-radius-bounded;
+  @include mdc-states-base-color(black);
+  @include mdc-states-hover-opacity(.1);
+  @include mdc-states-focus-opacity(.3);
+  @include mdc-states-press-opacity(.4);
+  @include mdc-button-ink-color(teal);
+  @include mdc-states(teal);
+}
+
+
+.red-button {
+  @include mdc-button-ink-color(red);
+  @include mdc-states(red);
+}

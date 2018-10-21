@@ -4,11 +4,17 @@
   "description": "Various experiments with frontend development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python3 -m http.server 5000 & xdg-open http://localhost:5000/index.html",
+    "py-sassc": "pysassc --include-path node_modules front.scss front.css",
+    "sassc": "sass --load-path=./node_modules/ front.scss front.css",
+    "mdc": "xdg-open http://localhost:5000/mdc-web-getting-started.html"
   },
   "author": "Uri London",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "material-components-web": "^0.40.1",
+    "sass": "^1.14.3"
   }
 }
